@@ -1,0 +1,27 @@
+@(capdUser: CapdUser)
+
+@main("Basic Play Auth App") {
+<h1>Hello @capdUser.getEmail()</h1>
+
+<p>Find all your current details below:</p>
+<ul>
+    <li>
+        password: @capdUser.getPasswd()
+    </li>
+    <li>
+        first name: @capdUser.getFirstName()
+    </li>
+    <li>
+        last name: @capdUser.getLastName()
+    </li>
+    <li>
+        active: @capdUser.isActive()
+    </li>
+    <li>
+        email validated: @capdUser.isEmailValidated()
+    </li>
+    <li>
+        last login: @capdUser.getLastLogin()
+    </li>
+</ul>
+}

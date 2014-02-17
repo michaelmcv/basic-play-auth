@@ -1,0 +1,12 @@
+name := "basic-play-auth"
+
+version := "1.0-SNAPSHOT"
+
+libraryDependencies ++= Seq(
+  javaJdbc,
+  cache,
+  javaJpa,
+    "org.hibernate" % "hibernate-entitymanager" % "3.6.9.Final"
+)     
+
+play.Project.playJavaSettings
